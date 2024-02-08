@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    /* background: #f4f4f4; */
+    /* Gradient all round */
+    /* background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url(../img/bg.jpg) center/cover no-repeat; */
+
+    /* background: linear-gradient(to right, #8e2de2, #4a00e0); */
+    background: linear-gradient(90deg, #b25aff, #712bfd);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+
+h1 {
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.form-container {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 40px;
+    transition: background-color 0.4s ease;
+    height: 500px;
+    /* white bg shadow */
+    box-shadow: 0 0 15px rgba(109, 109, 109, 0.235);
+}
+
+.form-container:hover {
+    /* background: rgba(0, 0, 0, 0.5); */
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.form {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+.input-group {
+    margin-top: 20px;
+}
+
+.input-field {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.input-field input {
+    width: calc(100% - 30px);
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+.input-field i {
+    position: absolute;
+    top: 50%;
+    left: 25px;
+    transform: translateY(-50%);
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #4a00e0;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+
+.button:hover {
+    background: #2fbc08;
+}
+
+.form-toggle {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.form-toggle button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.form-toggle button:focus {
+    outline: none;
+}
+
+.form-toggle button.active {
+    background: #2fbc08;
+}
+
+.button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #4a00e0;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.button:hover {
+    /* green success bg */
+    background: #2fbc08;
+}
+
+.form-toggle {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.form-toggle button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #4a00e0;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin: 0 10px;
+    /* Added margin to create space between buttons */
+}
+
+.form-toggle button:focus {
+    outline: none;
+}
+
+.form-toggle button.active {
+    background: #2fbc08;
+}
+
+.form .input-group button[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #4a00e0;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-top: 20px;
+    /* Added margin to create space between buttons */
+}
+
+.form .input-group button[type="submit"]:hover {
+    background: #2fbc08;
+}
