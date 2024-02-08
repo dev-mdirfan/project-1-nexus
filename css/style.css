@@ -36,8 +36,10 @@ h1 {
     padding: 40px;
     transition: background-color 0.4s ease;
     height: 500px;
-    /* white bg shadow */
-    box-shadow: 0 0 15px rgba(109, 109, 109, 0.235);
+    /* light color bg shadow */
+    /* box-shadow: 0 0 10px rgba(225, 225, 225, 0.5); */
+    /* box-shadow: 0 0 15px 5px rgba(109, 109, 109, 0.235); */
+    box-shadow: 0 0 10px 3px rgba(148, 148, 148, 0.235);
 }
 
 .form-container:hover {
@@ -60,20 +62,51 @@ h1 {
 .input-field {
     margin-bottom: 20px;
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 .input-field input {
     width: calc(100% - 30px);
     padding: 10px 30px;
-    border: none;
+    /* border: none; */
+    border: 2px solid transparent;
     border-radius: 5px;
     outline: none;
+    box-sizing: border-box;
 }
+
+.input-field input:focus {
+    /* border-color: #4a00e0; */
+    outline: 0;
+}
+
+.input-field.success input {
+    border-color: #2fbc08;
+}
+
+.input-field.error input {
+    border-color: #ff3860;
+}
+
+
+.input-field .error {
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+    transform: translateY(-50%);
+    color: #ff3860;
+    font-size: 12px;
+    height: 3px;
+    text-align: left;
+}
+
+
 
 .input-field i {
     position: absolute;
-    top: 50%;
-    left: 25px;
+    top: 19px;
+    left: 8px;
     transform: translateY(-50%);
     color: rgba(0, 0, 0, 0.5);
 }
