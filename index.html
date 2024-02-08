@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Register</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/script.js" defer></script>
+    <script src="https://kit.fontawesome.com/1530d66049.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-container">
+            <div class="form-toggle">
+                <button id="login-toggle" class="active">Login</button>
+                <button id="register-toggle">Register</button>
+            </div>
+            <form id="login-form" class="form active" method="POST" accept="/">
+                <h1>Login</h1>
+                <div class="input-group">
+                    <div class="input-field">
+                        <label for="login-email"><i class="fa-solid fa-user"></i></label>
+                        <input type="text" id="login-email" placeholder="Email or Username" name="email">
+                        <div class="error"></div>
+                    </div>
+                    <div class="input-field">
+                        <label for="login-password"><i class="fa-solid fa-lock"></i></label>
+                        <input type="password" id="login-password" placeholder="Password" name="password">
+                        <div class="error"></div>
+                    </div>
+                    <button type="submit">Login</button>
+                </div>
+            </form>
+            <form id="register-form" class="form">
+                <h1>Register</h1>
+                <div class="input-group">
+                    <div class="input-field">
+                        <label for="register-name"><i class="fa-solid fa-user"></i></label>
+                        <input type="text" id="register-name" placeholder="Name" name="name">
+                        <div class="error"></div>
+                    </div>
+                    <div class="input-field">
+                        <label for="register-email"><i class="fa-solid fa-envelope"></i></label>
+                        <input type="email" id="register-email" placeholder="Email" name="email">
+                        <div class="error"></div>
+                    </div>
+                    <div class="input-field">
+                        <label for="register-password"><i class="fa-solid fa-lock"></i></label>
+                        <input type="password" id="register-password" placeholder="Password" name="password">
+                        <div class="error"></div>
+                    </div>
+                    <div class="input-field">
+                        <label for="confirm-password"><i class="fa-solid fa-lock"></i></label>
+                        <input type="password" id="confirm-password" placeholder="Confirm Password"
+                            name="confirm-password">
+                        <div class="error"></div>
+                    </div>
+                    <button type="submit">Register</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
